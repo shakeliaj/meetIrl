@@ -21,6 +21,7 @@ module.exports = function(config) {
             './app/services/users/users.js', // our Users factory
             './app/app.js', // our angular app
             './app/services/users/users.spec.js',
+            './app/components/users/users.js',
             './app/components/users/users.spec.js'
         ],
 
