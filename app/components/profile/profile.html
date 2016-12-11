@@ -4,17 +4,18 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <div class="text-center">
-                        <img ng-src="{{user.pokemon.image}}" class="img-circle pokemon">
+                        <img ng-src="{{pc.user.pokemon.image}}" class="img-circle pokemon">
                     </div>
-                    <h3 class="panel-title text-center"><a ui-sref="profile({id: user.id})">{{user.name}}</a></h3>
+                    <h3 class="panel-title text-center">{{pc.user.name}}</h3>
                 </div>
                 <div class="panel-body text-center">
-                    <div><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> {{user.role}}</div>
-                    <div><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> {{user.location}}</div>
-                    <div><span class="glyphicon glyphicon-link" aria-hidden="true"></span> {{user.twitter}}</div>
-                    <div><span class="glyphicon glyphicon-leaf" aria-hidden="true"></span> {{user.pokemon.name}}</div>
-                    <div><span class="glyphicon glyphicon-tag" aria-hidden="true"></span> {{user.pokemon.type}}</div>
+                    <div><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> {{pc.user.role}}</div>
+                    <div><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> {{pc.user.location}}</div>
+                    <div><span class="glyphicon glyphicon-link" aria-hidden="true"></span> {{pc.user.twitter}}</div>
+                    <div><span class="glyphicon glyphicon-leaf" aria-hidden="true"></span> {{pc.user.pokemon.name | capitalize}}</div>
+                    <div><span class="glyphicon glyphicon-tag" aria-hidden="true"></span> {{pc.user.pokemon.type | capitalize}}</div>
                 </div>
             </div>
         </div>
     </div>
+</div>

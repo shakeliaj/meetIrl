@@ -3,7 +3,7 @@
         <div class="col-md-4" ng-repeat="users in uc.users">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title text-center">{{users.name}}</h3>
+                    <h3 class="panel-title text-center"><a ui-sref="profile({id: users.id})">{{users.name}}</a></h3>
                 </div>
                 <div class="panel-body">
                     <div><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>    {{ users.role }}</div>

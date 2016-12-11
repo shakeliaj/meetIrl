@@ -2,7 +2,8 @@
     'use strict';
 
     //define the component and controller we loaded in our test
-    angular.module('components.profile', [])
+    angular
+    .module('components.profile', [])
         .controller('ProfileController', function(resolvedUser, Pokemon, $state) {
             var vm = this;
 
